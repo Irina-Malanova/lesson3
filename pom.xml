@@ -11,7 +11,6 @@
 	<groupId>ru.gb.webapp</groupId>
 	<artifactId>lesson3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-web-app</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -38,8 +37,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${project.parent.version}</version>
 			</plugin>
 		</plugins>
+			<defaultGoal>install</defaultGoal>
 	</build>
 
 </project>
