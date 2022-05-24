@@ -17,6 +17,11 @@ public class ProductsController {
         this.productsService = productsService;
     }
 
+    @GetMapping(value = "/info")
+    @ResponseBody
+    public String info(){
+        return "info";
+    }
     // GET http://localhost:8080/app/show_all
     @GetMapping(value = "/show_all")
     public String showProductsPage(Model model){
